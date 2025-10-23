@@ -11,13 +11,11 @@
 void bubble_sort(int *array, size_t size)
 
 {
-	int count;
+	size_t count;
 
 	int i;
 
 	int temp;
-
-	int swapped;
 
 	if (array == NULL || size == 1)
 		return;
@@ -40,7 +38,7 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 
-		if (swapped == 0)
+		if (!swapped)
 			break;
 	}
 }
