@@ -1,26 +1,6 @@
 #include <stdio.h>
 
 /**
- * print_array - Prints an array of integers
- * @array: The array to be printed
- * @size: The number of elements in the array
- *
- * Return: Nothing
- */
-void print_array(int *array, size_t size)
-{
-	size_t i;
-
-	for (i = 0; i < size; i++)
-	{
-		printf("%d", array[i]);
-		if (i < size - 1)
-			printf(", ");
-	}
-	printf("\n");
-}
-
-/**
  * selection_sort - Sorts an array of integers in ascending order
  *                  using the Selection sort algorithm
  * @array: The array to be sorted
